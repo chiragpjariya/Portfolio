@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav>.nav-header {
+    display: inline;
+}
+
+.nav-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav>.nav-header>.nav-title {
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    padding: 10px 10px 10px 10px;
+}
+
+.nav>.nav-btn {
+    display: none;
+}
+
+.nav>.nav-links {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 18px;
+    width: 50%;
+    font-size: larger;
+}
+
+.nav>.nav-links>a {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color: #efefef;
+    height: 100%;
+    font-size: larger;
+}
+
+.nav>.nav-links>a:hover {
+    background-color: white;
+    color: black;
+    font-size: larger;
+}
+
+.nav>#nav-check {
+    display: none;
+}
+
+
+.container {
+    background-image: url('../Image/red-arrow-with-copy-space.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.IntoContainer {
+    /* border: 2px solid white; */
+    height: 40vh;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    color: white;
+
+}
+
+.introFirst .handEmoji {
+    margin-top: -10px;
+    height: 40px;
+    width: 60px;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introFirst,
+.name,
+.introAbout {
+    margin: 10px 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    /* border: 2px solid white; */
+}
+
+.introFirst {
+    display: flex;
+    justify-items: center;
+    font-size: 40px;
+}
+
+.name {
+    font-size: 60px;
+}
+
+.introAbout {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+
+
+
+
+@media (max-width:600px) {
+
+    .nav {
+        height: 60px;
+        width: 100%;
+        background-color: black;
+        color: white;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        z-index: 2;
+        margin-top: 0;
+    }
+
+    .nav>.nav-header {
+        height: 100%;
+
+
+    }
+
+    .nav-title {
+        float: right;
+    }
+
+    .nav-title a {
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+
+    .nav>.nav-links {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-size: 18px;
+        width: 50%;
+        font-size: larger;
+        height: auto;
+    }
+
+
+    .nav>.nav-links>a {
+        /* text-align: end; */
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-decoration: none;
+        color: #efefef;
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 114px;
+    }
+
+    .nav>.nav-links>a:hover {
+        background-color: white;
+        color: black;
+        font-size: larger;
+        cursor: pointer;
+    }
+
+
+
+    .nav>.nav-header>.nav-title {
+        display: inline-block;
+        font-size: 30px;
+        color: #fff;
+        padding: 10px 10px 10px 10px;
+    }
+
+
+    .nav>.nav-btn {
+        display: inline-block;
+        position: absolute;
+        top: 0px;
+        right: 26px;
+    }
+
+    .nav>.nav-btn>label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+    }
+
+    .nav>.nav-btn>label:hover,
+    .nav #nav-check:checked~.nav-btn>label {
+        background-color: rgba(0, 0, 0, 0.3);
+        /* background-color: rgb(20, 16, 16); */
+    }
+
+    .nav>.nav-btn>label>span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+    }
+
+    .nav>.nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        background-color: black;
+        color: white;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        top: 50px;
+        left: 0px;
+    }
+
+    .nav>.nav-links>a {
+        display: block;
+        width: 100%;
+    }
+
+    .nav>#nav-check:not(:checked)~.nav-links {
+        height: 0px;
+    }
+
+    .nav>#nav-check:checked~.nav-links {
+        height: calc(100vh - 50px);
+        overflow-y: auto;
+    }
+
+    /* container */
+    .container {
+        background-image: url('../Image/red-arrow-with-copy-space.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .IntoContainer {
+        /* border: 2px solid white; */
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        color: white;
+
+    }
+
+    .introFirst,
+    .name {
+        margin: 10px 0;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        /* border: 2px solid white; */
+    }
+
+    .introFirst {
+        display: flex;
+        justify-items: center;
+        font-size: 40px;
+    }
+
+    .name {
+        font-size: 60px;
+    }
+
+    .introAbout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        font-size: 30px;
+        font-weight: 600;
+        color: rgb(249, 94, 94);
+    }
+
+}

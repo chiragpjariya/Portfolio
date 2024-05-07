@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* project.html css */
+.bodyProject {
+    background-image: url('./img/bg2.jpg');
+    
+    height: auto;
+    overflow-y: auto;
+    width: 100vw;
+
+}
+
+.Pro_Container {
+    height: auto;
+    margin-top: 60px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    justify-items: start;
+    flex-wrap: wrap;
+   
+}
+
+.Pro_Cards {
+    height: 100vh;
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 20px;
+}
+
+.card {
+    padding: 10px;
+    height: 440px;
+    width: 260px;
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border: 1px solid rgba(0, 0, 0, 0.87);
+    display: flex;
+    flex-direction: column;
+    border-radius: 2%;
+}
+
+.Pro_img {
+    height: 50%;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.Pro_img_tag {
+    height: 100%;
+    width: 100%;
+}
+
+.pro_content {
+    padding: 10px;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.ptags {
+    display: block;
+}
+
+.Pro_link {
+    background-color: #0C090A;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: black;
+    width: 100%;
+}
+
+.p {
+    text-wrap: wrap;
+    overflow-wrap: break-word;
+}
+
+.Pro_link a {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "GRAD" 0;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+
+.Pro_link:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.8s ease-in-out;
+    border: 2px solid black;
+
+}
+
+.Pro_link:hover a {
+    color: blue;
+    text-decoration: underline;
+}
+
+.Gallery {
+    order: 4;
+    margin-top: 39%;
+}
+
+.password-m-b {
+    margin-top: 15px;
+}
+
+.alarm-m-b{
+    margin-top: 30%;
+}
+.tolists{
+    margin-top: 20px;
+    float: block-end;
+}
+.tolists2{
+    margin-top: 2px;
+    float: block-end;
+}
+.colorsboxs{
+    margin-top: 15%;
+}
+.reactboxchange{
+    margin-top: 30%;
+}
+
+/* project.html css close .......*/
